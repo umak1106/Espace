@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');body{
+    width:100%;
+    height:100%;
+}
+html{
+    padding:0;
+    margin:0;
+}
+
+#df{
+    font-family: 'Orbitron', sans-serif;
+}
+.side-nav a{
+    text-decoration: none;
+    color:black;
+}
+.navbar .navbar-brand{
+    font-size: 1.6rem;font-family: 'Orbitron', sans-serif;
+}
+.side-nav{
+    position: fixed;
+    z-index:2;
+    padding-left: 10px;
+    width:0px;
+    height:100vh;
+    background-color:#4b6988;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.side-nav a:hover{
+    color:rgb(233, 115, 115);
+    text-decoration: none;
+}
+#close{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 5.5px;
+}
+.closebtn{
+    font-size: 50px;
+    text-decoration: none;
+    position:relative;
+    color:black;
+
+}
+.startbtn{
+    font-size: 44px;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    color:black;
+    left:0px;
+}
+#mapid{
+    height:60vh;
+    width:60%;
+    margin:0 auto;
+    z-index: 1;
+}
+.navbar .navbar-brand{
+    font-size: 1.3rem;
+}
+.leaflet-marker-icon {
+	-moz-transition: -moz-transform 2s linear;
+	-webkit-transition: -webkit-transform 2s linear;
+	transition: transform 2s linear;
+}
+@media all and (max-width:500px){
+    #mapid{
+        height:61vh;
+        width:90%;
+    }
+    #main{
+        font-size:31px;
+     }
+     #a h3{
+        font-size: 23px;
+    }
+}

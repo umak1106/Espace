@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Mars Rover</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="style/roverstyle.css">
+    </head>
+    <body>
+        
+        <div class="side-nav" id="side-nav" style="z-index:5;">
+            <a id="df"><img id="close" src="\main\img\ufo.png"  onclick="closeNav()" width="35" height="35"><h1 style="color:rgb(255, 113, 31)">Espace</h1></a>
+            <hr class="my-4">
+            <a id="a" href="../index.html" class="display-4"><h3>  HOME</h3></a>
+          
+            <a id="a" href="apod.html" class="lead"><h3>  APOD<br><p class="black">Astronomical Image of day</p></h3></a>
+            
+            <a id="a" href="roverpics.html" class="lead"><h3>  Mars Images<br><p class="black">Images from Mars Rovers</p></h3></a>
+            
+
+          
+              <a id="a" href="iss.html" class="lead"><h3>  ISS live position</h3></a>
+              <hr class="my-4">
+          
+           </div>
+         <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="\main\img\ufo.png"  onclick="opennav()" width="35" height="35" alt="" >Espace
+            </a>
+          </nav>
+         
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid" id="ttop">
+                <h1 id="main" class="display-4" align="center">Mars Images</h1>
+                
+
+
+                
+<div class="form-group" align="center" style="background-color: rgb(177, 193, 223);">
+    <select id="rover">
+        <option value=" ">Select the Rover</option>
+        <option value="curiosity">Curiosity</option>
+        <option value="opportunity">Opportunity</option>
+        <option value="spirit">Spirit</option>
+    </select>
+    <p class="black text-center">Enter the Earth date:</p><input id="sool" class="form-control" required=required type="date" placeholder="Enter the earth date" style="width:300px;">
+<button class="btn btn-primary btn-sm" onclick="getpic()">Search</button></div>
+
+<div class="div1" id="div11" style="justify-content:center;width: 100%;height:fit-content;display: flex;flex-direction: row;flex-wrap: wrap;">
+</div></div>
+<div style="position:absolute;padding:0;bottom:10px;right:10px;width:50px;height:50px;position:fixed;border-radius:10px;background-color:rgb(255, 213, 213)">
+<a href="#ttop"><svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-arrow-bar-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M11.354 5.854a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L8 3.207l2.646 2.647a.5.5 0 0 0 .708 0z"/>
+    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-1 0v6.5a.5.5 0 0 0 .5.5zm-4.8 1.6c0-.22.18-.4.4-.4h8.8a.4.4 0 0 1 0 .8H3.6a.4.4 0 0 1-.4-.4z"/>
+  </svg></a> </div>
+        </div>
+        <footer>
+        
+    </footer>
+        <script src="script/rover.js"></script>
+        <script>
+            function opennav() {
+            document.getElementById("side-nav").style.width="400px";
+        }
+        function closeNav() {
+            document.getElementById("side-nav").style.width="0px";
+        }
+          </script>    
+    </body>
+</html>

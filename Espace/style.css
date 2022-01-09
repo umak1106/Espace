@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');html{
+    padding:0;
+    margin:0;
+     scroll-behavior: smooth;
+}
+.navbar .navbar-brand{
+    font-size: 1.6rem;
+    font-family: 'Orbitron', sans-serif;
+}
+.side-nav{
+    position: fixed;
+    z-index:2;
+    padding-left: 10px;
+    width:0px;
+ 
+    height:100vh;
+    background-color:#add6ff;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#df{
+    font-family:'Orbitron', sans-serif ;
+}
+
+#close{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 5.5px;
+    
+}
+.side-nav a{
+    text-decoration: none;
+    color:black;
+    margin-top: 20px;
+}
+.side-nav a:hover{
+    color:rgb(168, 168, 168);
+    text-decoration: none;
+}
+.closebtn{
+    font-size: 50px;
+    text-decoration: none;
+    position:relative;
+    color:black;
+
+}
+.startbtn{
+    font-size: 44px;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    color:black;
+    left:0px;
+}
+
+.dd{
+    width:0px;
+    height:100vh;
+    background-color: red;
+    z-index: 3;
+    position: absolute;
+}
+.container-fluid{
+    padding:0;
+    margin:0;
+    
+}
+.jumbotron{
+    margin:0;
+    height:fit-content;
+    
+   
+}
+
+.di{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.carousel_edits{
+    width:50%;
+    height:50%;
+    margin:0 auto;
+
+}
+.carousel_edits h5,p{
+    color:black;
+}
+@media all and (max-width:500px){
+    .carousel_edits{
+        width:90%;
+        height:70%;
+        margin:0 auto;
+    
+    }
+    #main{
+        font-size:32px;
+     }
+     
+     #le{
+        font-size: 17px;
+    }
+    #det{
+        font-size: 27px;
+        font-style: bold;
+    }
+}
+@media all and (max-width:350px){
+   #main{
+       font-size:25px;
+    }
+    .btn{
+size: 30px 40px;
+    }
+    #le{
+        font-size: 15px;
+    }
+    
+}
+
+
